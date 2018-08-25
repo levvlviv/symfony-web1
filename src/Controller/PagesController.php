@@ -12,6 +12,8 @@ class PagesController extends AbstractController
      */
     public function index()
     {
-        return $this->render('pages/index.html.twig');
+        return $this->render('pages/index.html.twig', [
+        	'header_img' => 'img/home-bg.jpg',
+        ]);
     }
 }
